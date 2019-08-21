@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Amigo | Plateforme Amigo de l’Ecole Centrale de Lyon</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Amigo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Plateforme Amigo de l’Ecole Centrale de Lyon" />
+<meta property="og:description" content="Plateforme Amigo de l’Ecole Centrale de Lyon" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Amigo" />
+<script type="application/ld+json">
+{"name":"Amigo","description":"Plateforme Amigo de l’Ecole Centrale de Lyon","@type":"WebSite","url":"http://localhost:4000/","headline":"Amigo","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Amigo" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Amigo</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/contact/">Contact</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home">
+
+  <h2 id="présentation-de-la-plateforme">Présentation de la plateforme</h2>
+
+<p>La plateforme <strong>Amigo</strong> est une plateforme expérimentale permettant l’analyse de données massives de mouvements issues de différentes sources de données : simulation numérique, GPS, flux vidéos, capteurs de mouvement. La particularité de la plateforme est de permettre une analyse de bout en bout, du stockage jusqu’à la visualisation des données dans le but de la détection/reconnaissance de mouvement humain ou analyse visuelle de trajectoires.</p>
+
+<div style="width: 100%; height:100px; overflow: hidden; align: middle">
+	<img style="margin: -70px; margin-left: auto; margin-right: auto;" src="img/teaser.png" />
+</div>
+<p><em>Exemples de projets réalisés dans la plateforme aussi bien en mode collaboratif et immersif d’analyse de données que via l’utilisation d’outils de visualisation.</em></p>
+
+<h2 id="offre-de-la-plateforme">Offre de la plateforme</h2>
+
+<p>L’utilisation de la plateforme offre les services suivant qui sont accessibles soit physiquement au sein des locaux de la plateforme, soit à distance/virtuellement :</p>
+
+<ul>
+  <li>
+    <p><em>L’exploration visuelle</em> de données de mouvement 2D ou 3D (x, z, t). Au stade exploratoire ces données doivent être représentées de manière brute.</p>
+  </li>
+  <li>
+    <p><em>L’analyse avancée de ces données</em> avec méthodes de filtrage, aggregation et prédiction (ex : occupation de l’espace a t+1). Ces méthodes permettent d’enrichir visuellement les données brutes et d’aider à la prise de décision.</p>
+  </li>
+  <li>
+    <p><em>Le travail collaboratif</em> de ces données dans un environnement immersif avec casques de réalité virtuelle et murs d’écrans. Ce mode de travail permet de réunir autour d’un même jeu de données plusieurs experts de domaines et analystes afin de résoudre un problème pendant une periode de travail limitée.</p>
+  </li>
+</ul>
+
+<h2 id="méthodologie-de-travail">Méthodologie de travail</h2>
+
+<p>Pour bénéficier des outils et de l’expertise de la plateforme, vous pouvez bénéficier des outils qui y sont dévelopés à distance en suviant la méthodologie suivante :</p>
+
+<p>   <strong>1. Prendre connaissance d’un échantillon de donnéees</strong> que nous utilisons et qui est compatible avec la plupart de ces outils. Notre format de données est tabulaire de la façon suivant :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>group</th>
+      <th>t</th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>A</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>A</td>
+      <td>2</td>
+      <td>0</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>   <strong>2. Générer un jeu de données au format similaire</strong> (+ d’attributs sont possibles) avec vos données sous forme d’échantillon afin de tester (une centaine de ligne). A ce stade il n’est pas nécessaire d’inclure toutes les colonnes de votre jeu de données. Vous souhaitez peut-être anonymiser le jeu de données à ce stade car il sera peut-être amené à être partagé avec les responsables / développeurs de la plateforme.</p>
+
+<pre><code class="language-{csv}">time,group,x1,x2,y1,y2,group_x1,group_x2,group_y1,group_y2,distance,distance_category,orientation,hour,minute,second,year,month,day
+Mon Jan  1 20:56:01 2018,2,752,542,899,30,3,2,0,4,894.0139819935704,long,S,20,56,1,2018,1,1
+Mon Jan  1 21:41:05 2018,0,677,418,886,186,3,2,0,4,746.3785902610015,long,S,21,41,5,2018,1,1
+Mon Jan  1 06:28:10 2018,2,225,380,53,562,1,1,4,2,532.0770620878145,medium,N,6,28,10,2018,1,1
+</code></pre>
+
+<p>   <strong>3. Vous pouvez décrire le jeu de données complet en utilisant le <a href="https://github.com/AmigoCap/datasets">format standard</a></strong>. Ce format a pour but d’inclure de la sémantique qui sera nécessaire afin de charger les données dans les différents outils.</p>
+
+<pre><code class="language-{javascript}">{
+  "file": "path/to/data.csv",
+  "separator": ",",
+  "meta": {
+    "start_date": "start_time",
+    "end_date": "end_time",
+    "start_latitude": "start_station_latitude",
+    ...
+  },
+  "attributes": [{
+      "name": "start_station_id",
+      "type": "quantitative"
+      ...
+    }
+}
+</code></pre>
+
+<p>   <strong>4. Utiliser les outils disponibles en ligne</strong> qui vous permettront de réaliser les différentes analyses à partir de vos données.</p>
+
+<ul>
+  <li>Gridify : exploration de données origine/destination</li>
+  <li><a href="https://github.com/AmigoCap/ReViVD/">Revvivd</a> : exploration de trajectoirs en réalité virtuelle</li>
+  <li><a href="https://github.com/AmigoCap/MecaFootCo">Analyse d’occupation :</a> méthodes de prédictions d’occupation de l’espace</li>
+</ul>
+
+<p>Besoin d’aide ? <a href="/contact/">Contactez-nous</a> si besoin ou utilisez le compte GitHub pour y enregistrer un problème avec la fonctionnalité <code class="highlighter-rouge">GitHub Issues</code>.</p>
+
+<h2 id="accès-physique-à-la-plateforme">Accès physique à la plateforme</h2>
+
+<p>La plateforme est hébergée au coeur du campus de l’<a href="https://www.ec-lyon.fr/">Ecole Centrale de Lyon</a> et est équipé de différents équipements relatifs à l’acquisition de données, l’affichage et l’interaction de manière collaboratie et immersive. <a href="/contact/">Nous contacter</a> pour plus d’information.</p>
+
+<p><img style="width: 50%" src="img/logo-ecole-centrale.png" /></p>
+
+
+
+</div>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Amigo</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Amigo</li><li><a class="u-email" href="mailto:romain.vuillemot@ec-lyon.fr">romain.vuillemot@ec-lyon.fr</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/amigocap"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">amigocap</span></a></li><li><a href="https://www.twitter.com/romsson"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">romsson</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Plateforme Amigo de l&#39;Ecole Centrale de Lyon</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
