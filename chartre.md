@@ -3,7 +3,7 @@
 layout: page
 title: Charte
 exclude: true
-permalink: /interne/charte/
+permalink: /interne/chartre/
 ---
 
 # Présentation de la plateforme AMIGO
