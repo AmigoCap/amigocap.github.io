@@ -13,10 +13,10 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Amigo" />
 <script type="application/ld+json">
-{"headline":"Amigo","@type":"WebSite","url":"http://localhost:4000/","name":"Amigo","description":"Plateforme Amigo de l’Ecole Centrale de Lyon","@context":"https://schema.org"}</script>
+{"name":"Amigo","description":"Plateforme Amigo de l’Ecole Centrale de Lyon","@type":"WebSite","url":"http://localhost:4000/","headline":"Amigo","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Amigo" /></head>
-<body><header class="site-header" role="banner">
+<body><header class="site-header">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Amigo</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -28,10 +28,33 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/acces/">Accès</a><a class="page-link" href="/cas-etude/">Cas d&#39;étude</a><a class="page-link" href="/contact/">Contact</a></div>
+        <div class="trigger">
+ 		        
+					    
+					    <a>
+								
+								
+								<a class="page-link active" href="http://localhost:4000/" >Home</a>
+							</a>
+						
+					    
+					    <a>
+								
+								
+								<a class="page-link " href="http://localhost:4000/cas-etude/" >Cas d'étude</a>
+							</a>
+						
+					    
+					    <a>
+								
+								
+								<a class="page-link " href="http://localhost:4000/contact/" >Contact</a>
+							</a>
+						
+						<!--<a class="page-link" href="/acces/">Accès</a><a class="page-link" href="/cas-etude/">Cas d&#39;étude</a><a class="page-link" href="/contact/">Contact</a>-->
+        </div>
       </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
+</header><main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="home">
 
@@ -59,88 +82,6 @@
     <p><em>Le travail collaboratif</em> de ces données dans un environnement immersif avec casques de réalité virtuelle et murs d’écrans. Ce mode de travail permet de réunir autour d’un même jeu de données plusieurs experts de domaines et analystes afin de résoudre un problème pendant une periode de travail limitée.</p>
   </li>
 </ul>
-
-<h2 id="nous-pouvons-analyser-vos-données-">Nous pouvons analyser vos données !</h2>
-
-<p>Les étapes suivantes permettent d’utiliser les outils de la plateforme. Ce sont des étapes techniques nécessaire afin de valider que vos données sont compatibles avec nos outils :</p>
-
-<p>   <strong>1. Prendre connaissance d’un échantillon de donnéees</strong> que nous utilisons et qui est compatible avec la plupart de ces outils. Notre format de données est tabulaire de la façon suivant :</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>id</th>
-      <th>group</th>
-      <th>t</th>
-      <th>x</th>
-      <th>y</th>
-      <th>z</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>A</td>
-      <td>1</td>
-      <td>0</td>
-      <td>2</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>A</td>
-      <td>2</td>
-      <td>0</td>
-      <td>3</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>B</td>
-      <td>1</td>
-      <td>2</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>   <strong>2. Générer un jeu de données au format similaire</strong> (+ d’attributs sont possibles) avec vos données sous forme d’échantillon afin de tester (une centaine de ligne). A ce stade il n’est pas nécessaire d’inclure toutes les colonnes de votre jeu de données. Vous souhaitez peut-être anonymiser le jeu de données à ce stade car il sera peut-être amené à être partagé avec les responsables / développeurs de la plateforme.</p>
-
-<pre><code class="language-{csv}">time,group,x1,x2,y1,y2,group_x1,group_x2,group_y1,group_y2,distance,distance_category,orientation,hour,minute,second,year,month,day
-Mon Jan  1 20:56:01 2018,2,752,542,899,30,3,2,0,4,894.0139819935704,long,S,20,56,1,2018,1,1
-Mon Jan  1 21:41:05 2018,0,677,418,886,186,3,2,0,4,746.3785902610015,long,S,21,41,5,2018,1,1
-Mon Jan  1 06:28:10 2018,2,225,380,53,562,1,1,4,2,532.0770620878145,medium,N,6,28,10,2018,1,1
-</code></pre>
-
-<p>   <strong>3. Vous pouvez décrire le jeu de données complet en utilisant le <a href="https://github.com/AmigoCap/datasets">format standard</a></strong>. Ce format a pour but d’inclure de la sémantique qui sera nécessaire afin de charger les données dans les différents outils.</p>
-
-<pre><code class="language-{javascript}">{
-  "file": "path/to/data.csv",
-  "separator": ",",
-  "meta": {
-    "start_date": "start_time",
-    "end_date": "end_time",
-    "start_latitude": "start_station_latitude",
-    ...
-  },
-  "attributes": [{
-      "name": "start_station_id",
-      "type": "quantitative"
-      ...
-    }
-}
-</code></pre>
-
-<p>   <strong>4. Utiliser les outils disponibles en ligne</strong> qui vous permettront de réaliser les différentes analyses à partir de vos données.</p>
-
-<ul>
-  <li>Gridify : exploration de données origine/destination</li>
-  <li><a href="https://github.com/AmigoCap/ReViVD/">ReViVD</a> : exploration de trajectoirs en réalité virtuelle</li>
-  <li><a href="https://github.com/AmigoCap/MecaFootCo">Analyse d’occupation :</a> méthodes de prédictions d’occupation de l’espace</li>
-</ul>
-
-<p>Besoin d’aide ? <a href="/contact/">Contactez-nous</a> si besoin ou utilisez le compte GitHub pour y enregistrer un problème avec la fonctionnalité <code class="highlighter-rouge">GitHub Issues</code>.</p>
 
 <h2 id="accès-physique-à-la-plateforme">Accès physique à la plateforme</h2>
 
