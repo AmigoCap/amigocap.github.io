@@ -1,9 +1,4 @@
 
-<p align="center">
-  <a href="https://www.ec-lyon.fr/"><img style="width: 30%" src="img/logo-ecole-centrale.png"></a>
-  <a href="https://www.ec-lyon.fr/"><img style="width: 30%" src="img/logo-liris.png"></a>
-</p>
-
 ## Présentation de la plateforme
 
 
@@ -11,16 +6,17 @@
 
 La plateforme Amigo est une **plateforme expérimentale autour de l'analyse de données massives de trajectoires** issues de différentes sources de données : simulation numérique, GPS, flux vidéos, capteurs de mouvement. La particularité de la plateforme est de permettre une analyse de bout en bout, du stockage jusqu'à la visualisation des données dans le but de la détection/reconnaissance d'anomalies, modélisation ou communication scientifique.
 
-<div style="width: 80%; ">
-  <img style="margin: -70px; margin-left: auto; margin-right: auto;" src="img/teaser.png">
+<div style="width: 80%; text-align: center">
+  <img style="margin-left: auto; margin-right: auto;" src="img/teaser.png">
 </div>
 
 *Exemples de projets réalisés au sein de la plateforme Amigo : collaboration en mode immersif avec mur d'écran; analyse de trajectoires sportives et simulations numériques en réalité virtuelle.*
 
 ### Video de présentation
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t8DHTdu3pLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<div style="width: 80%; text-align: center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/t8DHTdu3pLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Offre de la plateforme
 
@@ -40,10 +36,7 @@ La plateforme est hébergée au coeur du campus de l'[Ecole Centrale de Lyon](ht
 <br><br>
 
 
-{% comment %} 
-
-{% include_relative equipment.md %}
-
-{% include_relative projects.md %}
-
-{% endcomment %} 
+<p align="center" style="text-align: center">
+  <a href="https://www.ec-lyon.fr/"><img style="width: 30%" src="img/logo-ecole-centrale.png"></a>
+  <a href="https://www.ec-lyon.fr/"><img style="width: 10%" src="img/logo-liris.png"></a>
+</p>
