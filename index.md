@@ -1,3 +1,7 @@
+---
+layout: home
+title: Présentation
+---
 
 ## Présentation de la plateforme
 
