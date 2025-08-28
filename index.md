@@ -30,6 +30,7 @@ L'utilisation de la plateforme offre les services suivant qui sont accessibles s
 
 * *Le travail collaboratif* de ces données dans un environnement immersif avec casques de réalité virtuelle et murs d'écrans. Ce mode de travail permet de réunir autour d'un même jeu de données plusieurs experts de domaines et analystes afin de résoudre un problème pendant une periode de travail limitée.
 
+Récemment la plateforme a permis l'analyse et la visualisation de données de mouvement issues de différents domaines d'application tels que le [tennis de table](https://centralelyon.github.io/table-tennis/).
 
 ## Accès physique à la plateforme
 
